@@ -3,7 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Design | Jaiden Muruvan</title>
+    <meta
+      name="description"
+      content="Jaiden Muruvan's portfolio website, showing web design and game development."
+    />
+    <meta
+      name="keywords"
+      content="Web design, game development, interactive media, portfoilio, Jaiden Muruvan, html, css."
+    />
+    <title>Design</title>
     <link rel="stylesheet" href="../normalize.css">
     <link rel="stylesheet" href= "../main.css">
     <script src="https://kit.fontawesome.com/5b1876fb7a.js" crossorigin="anonymous"></script>
@@ -17,12 +25,13 @@
 <body>
 
     
-
-        <nav>
+<header>
+    <nav>
             <input type="checkbox" id="check"> 
             <label for="logo" class="logo"> Jaiden Muruvan </label>
             <label for="check" class="burger-button"><i class="fa-solid fa-bars"></i></label>
             <img src= "../Images/WebsiteLogo.png" alt="Logo of the Website" id="logo"/>
+
         <ul>
     
             <li><a href="../index.html"> Home </a></li>
@@ -33,74 +42,124 @@
             <li><a href="../About/aboutpage.html"> About </a></li>
         
         </ul>
-        </nav>
-
+    </nav>
+</header>
     
 
     <main>
 
-    <h1>Web Design</h1>
+    <h1> Design Process </h1>
 
-    <h2> Design Process </h2>
-
+    <div class="container">
+        <aside>
+            <div class="SideBar">
+                <ul>
+                    <li>
+                        <a href="#goal-alignment">Goals</a>
+                    </li>
+                    <li>
+                        <a href="#ux">UX</a>
+                    </li>
+                    <li>
+                        <a href="#wireframes">Wireframes</a>
+                    </li>
+                    <li>
+                        <a href="#style-guide">Style Guide</a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </div>
     <article>
 
-    <section>
+        <section>
 
-    <h2> Intial Wireframes </h2>
-
-    <img src= "Images/WireframeHome.png" alt="Wireframe of the Home Page" width="400" height="450"/> 
-    <img src= "Images/WireframeBlogs.png" alt="WIreframe of Blogs Page" width="400" height="450"/> 
-    <img src= "Images/WireframePortfolio.png" alt="Wireframe of Portfolio Page" width="400" height="450"/> </br>
-    <img src= "Images/WireframeEssay.png" alt="Wireframe of Essays Page" width="400" height="450"/> 
-    <img src= "Images/WireframeAbout.png" alt="Wireframe of About Page" width="400" height="450"/>
-
-    </section>
-
-    <section>
-
-    <h3> Goal Alignment </h3>
+            <h2 id="goal-alignment" class="goal-alignmentdiv"> Goal Alignment </h2>
+            
+            <p>
+            The goal of this website is to be a digital portfolio of my work highlighting my accomplishments, skills and experiences aiming to 
+            attract potential employers, collaborators or just to serve as inspiration for those interested in the same field.
+            </p>
+        
+            </section>
+        
+            <section>
+        
+            <h3> Target audience include </h3>
+        
+            <p>
+            Potential Employers: Those looking to potentially offer me a employment opportunity and want an understanding on my experience, 
+            skills and quality of work.
+            </p>
+        
+            <p>
+            Collaborators: Those who view my website and work and are interested in potential collaborative projects or professional networking. 
+            Students and Professionals: Those seeking inspiration and motivation from my website design process and body of work and want to 
+            learn from it.
+            </p>
+        
+        </section>
     
-    <p>
-    The goal of this website is to be a digital portfolio of my work highlighting my accomplishments, skills and experiences aiming to 
-    attract potential employers, collaborators or just to serve as inspiration for those interested in the same field.
-    </p>
+        <section>
 
-    </section>
+            <h2 id="ux" class="uxdiv"> Information Structure - Content Mapping </h2>
+        
+            <img src= "Images/InformationStructure.png" alt="Image of Information Structure and Content Mapping" width="700" height="650"/> 
+        
+            </section>
+        
+            <section>
+        
+            <h3> User Flow - Screens, Behaviour, and Decisions </h3>
+        
+            <img src= "Images/UserFlow.png" alt="Image of User Flow, screens, behaviour and decisions" width="700" height="650"/> 
+        
+            </section>
+
+
+        <section>
+
+        <h2 id="wireframes" class="wireframesdiv"> Intial Wireframes </h2>
+
+        <img src= "Images/WireframeHome.png" alt="Wireframe of the Home Page" width="400" height="450"/> 
+        <img src= "Images/WireframeBlogs.png" alt="WIreframe of Blogs Page" width="400" height="450"/> 
+        <img src= "Images/WireframePortfolio.png" alt="Wireframe of Portfolio Page" width="400" height="450"/> </br>
+        <img src= "Images/WireframeEssay.png" alt="Wireframe of Essays Page" width="400" height="450"/> 
+        <img src= "Images/WireframeAbout.png" alt="Wireframe of About Page" width="400" height="450"/>
+
+        
+
+        <h3> Wireframe with colour palette </h3>
+    
+        <img src= "Images/ColourBlogPage.png" alt="Image of wireframe with colour palette" width="800" height="400"/>
+        
+        
+        </section>
+
+    
+
+    
 
     <section>
 
-    <h3> Target audience include </h3>
-
-    <p>
-    Potential Employers: Those looking to potentially offer me a employment opportunity and want an understanding on my experience, 
-    skills and quality of work.
-    </p>
-
-    <p>
-    Collaborators: Those who view my website and work and are interested in potential collaborative projects or professional networking. 
-    Students and Professionals: Those seeking inspiration and motivation from my website design process and body of work and want to 
-    learn from it.
-    </p>
-
+        <h2 id="style-guide" class="style-guidediv"> Colour Palettes </h2>
+        
+            <p>
+            These are the colour palettes that I have chosen for now, I am certain that these will change during the development of this website. 
+            For the colour scheme I wanted a clean or modern look to it with neutral backgrounds to make the content on the pages stand out more and 
+            having one or two vibrant colours for emphasis. This will ensure that interactive elements such as buttons and links will stand out more.
+            </p>
+        
+            <img src= "Images/PaletteOne.png" alt="Image of colour palette one" width="200" height="300"/>
+            <img src= "Images/PaletteOneDescription.png" alt="Description of colour palette one" width="470" height="300"/> </br>
+            <img src= "Images/PaletteTwo.png" alt="Image of colour palette two" width="200" height="300"/>
+            <img src= "Images/PaletteTwoDescription.png" alt="Description of colour palette two" width="450" height="300"/> </br>
+            <img src= "Images/PaletteThree.png" alt="Image of colour palette three" width="200" height="300"/>
+            <img src= "Images/PaletteThreeDescription.png" alt="Description of colour palette three" width="450" height="300"/> </br>
+        
     </section>
-
-    <section>
-
-    <h3> Information Structure - Content Mapping </h3>
-
-    <img src= "Images/InformationStructure.png" alt="Image of Information Structure and Content Mapping" width="700" height="650"/> 
-
-    </section>
-
-    <section>
-
-    <h3> User Flow - Screens, Behaviour, and Decisions </h3>
-
-    <img src= "Images/UserFlow.png" alt="Image of User Flow, screens, behaviour and decisions" width="700" height="650"/> 
-
-    </section>
-
+        
+    
     <section>
 
     <h3> List and explanation of selected Interface Elements </h3>
@@ -147,25 +206,7 @@
 
     </section>
 
-    <section>
-
-    <h3> Colour Palettes </h3>
-
-    <p>
-    These are the colour palettes that I have chosen for now, I am certain that these will change during the development of this website. 
-    For the colour scheme I wanted a clean or modern look to it with neutral backgrounds to make the content on the pages stand out more and 
-    having one or two vibrant colours for emphasis. This will ensure that interactive elements such as buttons and links will stand out more.
-    </p>
-
-    <img src= "Images/PaletteOne.png" alt="Image of colour palette one" width="200" height="300"/>
-    <img src= "Images/PaletteOneDescription.png" alt="Description of colour palette one" width="470" height="300"/> </br>
-    <img src= "Images/PaletteTwo.png" alt="Image of colour palette two" width="200" height="300"/>
-    <img src= "Images/PaletteTwoDescription.png" alt="Description of colour palette two" width="450" height="300"/> </br>
-    <img src= "Images/PaletteThree.png" alt="Image of colour palette three" width="200" height="300"/>
-    <img src= "Images/PaletteThreeDescription.png" alt="Description of colour palette three" width="450" height="300"/> </br>
-
-    </section>
-
+    
     <section>
 
     <h3> Font Choices </h3>
@@ -197,13 +238,7 @@
 
     </section>
 
-    <section>
-
-    <h3> Wireframe with colour palette </h3>
-
-    <img src= "Images/ColourBlogPage.png" alt="Image of wireframe with colour palette" width="800" height="400"/>
     
-    </section>
 
     <section>
 
@@ -220,6 +255,8 @@
     </section>
 
     </article>
+
+    <a href="#">Back to the Top</a>
 
     </main>
 
