@@ -46,3 +46,49 @@ a.active{
     width: 90px;
     margin: 0 0 -12px -345px;
 }
+
+.burger-button{
+    font-size: 30px;
+    color: white;
+    float: right;
+    margin-right: 40px;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width: 1100px){
+    .burger-button{
+        display: block;
+    }
+
+    nav ul{
+        position: fixed;
+        width: 100%;
+        background-color: rgba(56, 56, 56, 0.644);
+        height: 100vh;
+        text-align: center;
+        top: 60px;
+        left: 120%;
+        transition: all 1s;
+    }
+
+    nav ul li{
+        display: block;
+        padding: 30px 0;
+    }
+
+    nav ul li{
+        font-size: 25px;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
