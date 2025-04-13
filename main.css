@@ -1,0 +1,48 @@
+body{
+    font-family: "Roboto", sans-serif;  
+    background: #F5F5F5;
+}
+
+nav{
+    background: #424242;
+    height: 80px;
+    width: 100%;
+}
+
+.logo{
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 80px;
+    margin: 0 0 50px 80px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+nav ul li a{
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    
+}
+
+a.active{
+    background: #229799;
+    color: white;
+    padding: 8px 30px;
+    border-radius: 10px;
+}
+
+#logo{
+    width: 90px;
+    margin: 0 0 -12px -345px;
+}
