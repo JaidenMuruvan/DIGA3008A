@@ -8,6 +8,9 @@ body{
     font-size: 60px;
     text-align: center;
     font-weight: bold;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.126), rgba(0, 0, 0, 0.767)), #48C8CB;
+    height: 80px;
+    margin-top: 0px;
 }
 
 .welcome{
@@ -15,23 +18,31 @@ body{
     font-size: 75px;
     font-weight: bold;
     color: #ffffff;
-    text-align: center; 
+    text-align: center;
     background-color: black;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.222), rgba(0, 0, 0, 0.737) ), url(Images/WelcomeTest2.jpg) center / cover no-repeat;
     height: 500px;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
     margin-top: -101px;
     
 }
 
+.intro-text{
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    margin-top: -70px;
+    text-align: center;
+}
+
 
 nav{
-    background: #424242;
+    background: #000000eb;
     height: 80px;
     width: 100%;
     font-family: "Kanit", sans-serif;
-    
+    position: sticky;
+    z-index: 999;
 }
 
 nav ul li:hover{
@@ -39,7 +50,7 @@ nav ul li:hover{
 }
 
 .footer-content{
-    background: #424242;
+    background: #000000eb;
     height: 60px;
     width: 100%;
 }
@@ -143,3 +154,46 @@ a.active{
 
 }
 
+.home-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 5%;
+}
+
+.home-card{
+    display: flex;
+    height: 330px;
+    width: 250px;
+    text-align: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: white;
+    margin-left: 1%;
+    margin-bottom: 20px;
+}
+
+.home-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px #b1b1b16b;
+    background-color: #b1b1b100;
+}
+
+.readmore{
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 20px;
+    
+}
+
+.readmore:hover{
+    transform: translateY(-2px);
+    
+    text-decoration: underline;
+}

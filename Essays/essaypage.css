@@ -1,18 +1,14 @@
-h2{
-    font-family: "Kanit", sans-serif;
-}
-
-.blog-container{
+.port-container{
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: center;
     margin-top: 100px;
     margin-left: 2%;
     margin-right: 2%;
     margin-bottom: 5%;
 }
 
-.blog-card{
+.port-card{
     display: flex;
     height: 400px;
     width: 250px;
@@ -27,30 +23,8 @@ h2{
     
 }
 
-.blog-card:hover{
+.port-card:hover{
     transform: translateY(-5px);
     box-shadow: 0 0 15px #b1b1b16b;
     background-color: #b1b1b100;
-}
-
-.blog-content{
-    width: 50%;
-    text-align: center;
-    margin-left: 375px;
-    border: 1px solid black;
-    padding: 20px;
-}
-
-.read-more{
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    padding: 5px 20px;
-    
-}
-
-.read-more:hover{
-    transform: translateY(-2px);
-    
-    text-decoration: underline;
 }
