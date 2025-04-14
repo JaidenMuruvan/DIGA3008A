@@ -3,10 +3,30 @@ body{
     background: #F5F5F5;
 }
 
+.welcome{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
 nav{
     background: #424242;
     height: 80px;
     width: 100%;
+    
+}
+
+.footer-content{
+    background: #424242;
+    height: 60px;
+    width: 100%;
+}
+
+.footer-content p{
+    text-align: center;
+    color: white;
+    line-height: 60px;
+    font-weight: bold;
 }
 
 .logo{
@@ -66,15 +86,21 @@ a.active{
         display: block;
     }
 
+    nav{
+        position: static;
+    }
+
     nav ul{
         position: fixed;
-        width: 100%;
+        width: 50%;
         background-color: rgba(56, 56, 56, 0.644);
         height: 100vh;
-        text-align: center;
+        text-align: left;
         top: 60px;
-        left: 120%;
+        margin-right: 0;
+        right: -120%;
         transition: all 1s;
+        
     }
 
     nav ul li{
@@ -89,11 +115,8 @@ a.active{
     }
 
     #check:checked ~ ul{
-        left: 0;
+        right: 0;
     }
 
-    .welcome{
-        font-size: 50px;
-        font-weight: bold;
-    }
+
 }

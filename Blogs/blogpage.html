@@ -15,6 +15,7 @@
     <title>Blogs</title>
     <link rel="stylesheet" href="../normalize.css" />
     <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="blogpage.css" />
     <script
       src="https://kit.fontawesome.com/5b1876fb7a.js"
       crossorigin="anonymous"
@@ -28,38 +29,62 @@
     />
   </head>
   <body>
-    <nav>
-      <input type="checkbox" id="check" />
-      <label for="logo" class="logo"> Jaiden Muruvan </label>
-      <label for="check" class="burger-button"
-        ><i class="fa-solid fa-bars"></i
-      ></label>
-      <img
-        src="../Images/WebsiteLogo.png"
-        alt="Logo of the Website"
-        id="logo"
-      />
-      <ul>
-        <li><a href="../index.html"> Home </a></li>
-        <li><a href="../Blogs/blogpage.html" class="active"> Blogs </a></li>
-        <li><a href="../Portfolio/portfoliopage.html"> Portfolio </a></li>
-        <li><a href="../Essays/essaypage.html"> Essays </a></li>
-        <li><a href="../WebDesign/designpage.html"> Web Design </a></li>
-        <li><a href="../About/aboutpage.html"> About </a></li>
-      </ul>
-    </nav>
+    <header>
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="logo" class="logo"> Jaiden Muruvan </label>
+        <label for="check" class="burger-button"
+          ><i class="fa-solid fa-bars"></i
+        ></label>
+        <img
+          src="../Images/WebsiteLogo.png"
+          alt="Logo of the Website"
+          id="logo"
+        />
+        <ul>
+          <li><a href="../index.html"> Home </a></li>
+          <li><a href="../Blogs/blogpage.html" class="active"> Blogs </a></li>
+          <li><a href="../Portfolio/portfoliopage.html"> Portfolio </a></li>
+          <li><a href="../Essays/essaypage.html"> Essays </a></li>
+          <li><a href="../WebDesign/designpage.html"> Web Design </a></li>
+          <li><a href="../About/aboutpage.html"> About </a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <section>
+    <main>
       <h1>Blogs</h1>
 
-      <a href="../Blogs/blogweek1.html"> Blog Week 1 </a>
-      <a href="../Blogs/blogweek2.html"> Blog Week 2 </a>
-      <a href="../Blogs/blogweek3.html"> Blog Week 3 </a>
-      <a href="../Blogs/blogweek4.html"> Blog Week 4 </a>
-    </section>
-
-    <hr />
-
-    <footer><h4>© 2025 Jaiden Muruvan | All Rights Reserved</h4></footer>
+      <div class="blog-container">
+        <div class="blog-card">
+          <h2>Week 1 Blog Post</h2>
+          <p>Description of Blog 1</p>
+          <a href="../Blogs/blogweek1.html"> Read More </a>
+        </div>
+        <div class="blog-card">
+          <h2>Week 2 Blog Post</h2>
+          <p>Description of Blog 2</p>
+          <a href="../Blogs/blogweek2.html"> Read More </a>
+        </div>
+        <div class="blog-card">
+          <h2>Week 3 Blog Post</h2>
+          <p>Description of Blog 3</p>
+          <a href="../Blogs/blogweek3.html"> Read More </a>
+        </div>
+        <div class="blog-card">
+          <h2>Week 4 Blog Post</h2>
+          <p>Description of Blog 4</p>
+          <a href="../Blogs/blogweek4.html"> Read More </a>
+        </div>
+        <div class="blog-card">
+          <h2>Week 7 Blog Post</h2>
+          <p>Description of Blog 7</p>
+          <a href="../Blogs/blogweek7.html"> Read More </a>
+        </div>
+      </div>
+    </main>
+    <footer class="footer-content">
+      <p>© 2025 Jaiden Muruvan | All Rights Reserved</p>
+    </footer>
   </body>
 </html>
