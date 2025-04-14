@@ -3,17 +3,39 @@ body{
     background: #F5F5F5;
 }
 
-.welcome{
-    font-size: 50px;
-    font-weight: bold;
+.top-headings{
+    
+    font-size: 60px;
     text-align: center;
+    font-weight: bold;
 }
+
+.welcome{
+    font-family: "Kanit", sans-serif;
+    font-size: 75px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center; 
+    background-color: black;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.222), rgba(0, 0, 0, 0.737) ), url(Images/WelcomeTest2.jpg) center / cover no-repeat;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    margin-top: -101px;
+    
+}
+
 
 nav{
     background: #424242;
     height: 80px;
     width: 100%;
+    font-family: "Kanit", sans-serif;
     
+}
+
+nav ul li:hover{
+   text-decoration: underline white; 
 }
 
 .footer-content{
@@ -57,7 +79,7 @@ nav ul li a{
 
 a.active{
     color: #229799;
-    text-decoration: underline;
+    text-decoration: underline #229799;
     font-weight: bold;
     border-radius: 10px;
 }
@@ -120,3 +142,4 @@ a.active{
 
 
 }
+
