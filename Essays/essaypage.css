@@ -1,4 +1,4 @@
-.port-container{
+.essay-container{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -8,10 +8,10 @@
     margin-bottom: 5%;
 }
 
-.port-card{
+.essay-card{
     display: flex;
     height: 400px;
-    width: 250px;
+    width: 400px;
     text-align: center;
     flex-direction: column;
     padding: 20px;
@@ -23,7 +23,7 @@
     
 }
 
-.port-card:hover{
+.essay-card:hover{
     transform: translateY(-5px);
     box-shadow: 0 0 15px #b1b1b16b;
     background-color: #b1b1b100;

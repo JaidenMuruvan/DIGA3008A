@@ -1,0 +1,19 @@
+h2{
+    text-align: center;
+}
+
+.port-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    margin: 40px 20px;
+    border-radius: 20px;
+    background-color: #ebe9e48b;
+}
+
+.game-asset:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 0 20px #0000006b;
+    background-color: #00000052;
+}

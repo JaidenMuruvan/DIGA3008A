@@ -11,6 +11,7 @@ body{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.126), rgba(0, 0, 0, 0.767)), #48C8CB;
     height: 80px;
     margin-top: 0px;
+    border-bottom: 2px solid black;
 }
 
 .welcome{
@@ -171,7 +172,7 @@ a.active{
     text-align: center;
     flex-direction: column;
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 10px;
     border: 1px solid black;
     background-color: white;
     margin-left: 1%;
@@ -185,6 +186,8 @@ a.active{
 }
 
 .readmore{
+    font-family: "Kanit", sans-serif;
+    font-size: 20px;
     font-weight: bold;
     text-align: center;
     text-decoration: none;
