@@ -36,9 +36,9 @@ nav ul li a{
 }
 
 a.active{
-    background: #229799;
-    color: white;
-    padding: 8px 30px;
+    color: #229799;
+    text-decoration: underline;
+    font-weight: bold;
     border-radius: 10px;
 }
 
@@ -90,5 +90,10 @@ a.active{
 
     #check:checked ~ ul{
         left: 0;
+    }
+
+    .welcome{
+        font-size: 50px;
+        font-weight: bold;
     }
 }
