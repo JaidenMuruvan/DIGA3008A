@@ -44,13 +44,19 @@ body{
     text-align: center;
 }
 
+header{
+    position: sticky;
+    top: 0;
+}
+
 
 nav{
-    background: #000000eb;
+    position: sticky;
+    background: #000000f2;
     height: 80px;
     width: 100%;
     font-family: "Kanit", sans-serif;
-    position: sticky;
+    
     
 }
 
@@ -131,6 +137,7 @@ a.active{
 
     nav{
         position: static;
+        
     }
 
     header{

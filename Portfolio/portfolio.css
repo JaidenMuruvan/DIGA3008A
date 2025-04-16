@@ -1,19 +1,48 @@
 h2{
     text-align: center;
+    font-family: "Kanit";
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    background-color: #000000;
+    margin-top: 5%;
+    margin-left: 35%;
+    margin-right: 35%;
+    padding: 20px 20px;
+    border-radius: 10px;
 }
 
 .port-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid black;
+    
     margin: 40px 20px;
     border-radius: 20px;
-    background-color: #ebe9e48b;
+}
+
+.game-asset{
+    box-shadow: 0 0 20px #229799b6;
 }
 
 .game-asset:hover{
-    transform: translateY(-6px);
-    box-shadow: 0 0 20px #0000006b;
+    box-shadow: 0 0 20px #229799;
     background-color: #00000052;
+}
+
+@media (max-width: 1000px){
+    .port-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin: 20px 10px;
+        padding: 15px;
+    }
+    
+    h2{
+        margin-left: 25%;
+        margin-right: 25%;
+        font-size: 24px;
+        padding: 8px;
+    }
 }
