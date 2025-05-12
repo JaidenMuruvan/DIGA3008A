@@ -1,0 +1,50 @@
+.design-content{
+    width: 50%;
+    text-align: left;
+    margin-left: 375px;
+    
+    
+}
+
+.goals{
+    border: 1px solid black;
+    padding: 20px;
+    margin-bottom: 6%;
+}
+
+.ux{
+    border: 1px solid black;
+    padding: 20px;
+    margin-bottom: 6%;
+    text-align: center;
+    
+    
+}
+
+.wireframe{
+    border: 1px solid black;
+    padding: 20px;
+    margin-bottom: 6%;
+    text-align: center;
+}
+
+.style-guide{
+    border: 1px solid black;
+    padding: 20px;
+    margin-bottom: 6%;
+    text-align: center;
+}
+
+.elements{
+    border: 1px solid black;
+    padding: 20px;
+    margin-bottom: 6%;
+    text-align: center;
+}
+
+.references{
+    border: 1px solid black;
+    padding: 20px;
+    margin-bottom: 6%;
+    text-align: center;
+}
