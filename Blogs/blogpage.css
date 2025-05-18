@@ -15,8 +15,8 @@ h2{
 
 .blog-card{
     display: flex;
-    height: 350px;
-    width: 350px;
+    height: 300px;
+    width: 300px;
     text-align: center;
     flex-direction: column;
     padding: 20px;
@@ -63,11 +63,16 @@ h2{
     .blog-container{
         flex-direction: column;
         align-items: center;
+        margin-top: 10%;
+        margin-left: 2%;
+        margin-right: 2%;
+       
     }
 
     .blog-content{
         font-size: 20px;
         margin: 10%;
+        
     }
 
 
