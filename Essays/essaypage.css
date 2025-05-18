@@ -71,7 +71,9 @@ h2{
 
     .essay-content{
         font-size: 20px;
-        margin: 10%;
+        margin-top: 10%;
+        margin-left: 0%;
+        width: auto;
         
     }
 
