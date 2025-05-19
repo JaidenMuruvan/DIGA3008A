@@ -130,7 +130,7 @@ a.active{
     display: none;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1050px){
     .burger-button{
         display: block;
     }
