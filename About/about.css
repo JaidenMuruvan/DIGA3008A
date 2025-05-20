@@ -2,5 +2,15 @@
     border: 1px solid black;
     padding: 20px;
     margin-bottom: 6%;
-    text-align: center;
+    
+}
+
+.about-image{
+    width: 18rem;
+}
+
+.about-text{
+    font-family: "Kanit", sans-serif;
+    font-size: 1.5rem;
+    
 }
