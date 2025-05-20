@@ -1,3 +1,4 @@
+
 .design-content{
     width: 50%;
     text-align: left;
@@ -87,6 +88,10 @@
 }
 
 @media (max-width: 1050px){
+    .top-headings{
+        font-size: 3.2rem;
+    }
+
     .design-content{
         font-size: 20px;
         margin-top: 10%;
