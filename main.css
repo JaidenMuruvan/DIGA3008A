@@ -160,7 +160,7 @@ a.active{
     nav ul{
         position: fixed;
         width: 50%;
-        background-color: rgb(0, 0, 0);
+        background-color: #000000f2;
         height: 100vh;
         text-align: left;
         top: 60px;
