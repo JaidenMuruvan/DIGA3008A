@@ -223,10 +223,11 @@ a.active{
     background-color: white;
     margin-left: 1%;
     margin-bottom: 20px;
+    transition: ease-in-out 0.35s;
 }
 
 .home-card:hover{
-    transform: translateY(-5px);
+    transform: translateY(-8px);
     box-shadow: 0 0 15px #b1b1b16b;
     background-color: #b1b1b100;
 }
