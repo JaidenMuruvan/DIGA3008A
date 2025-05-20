@@ -61,6 +61,17 @@
     width:25rem;
 }
 
+.font-image{
+    width: 25rem;
+}
+
+.button-image{
+    width: 20rem;
+}
+
+.reference-image{
+    width: 30rem;
+}
 .elements{
     border: 1px solid black;
     padding: 20px;
@@ -84,4 +95,38 @@
         width: auto;
         
     }
+
+    .ux-image{
+    width: 100%;
+
+    }
+
+    .palette-one{
+    width: 50%;
+    }
+
+    .colour-one{
+    width: 70%;
+    }
+
+    .palette-image{
+    width: 50%;
+    }
+
+    .colour-image{
+    width: 70%;
+    }
+
+    .font-image{
+    width: 70%;
+    }
+
+    .button-image{
+    width: 70%;
+    }
+
+    .reference-image{
+        width: 100%;
+    }
+
 }
