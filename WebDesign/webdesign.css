@@ -21,6 +21,10 @@
     
 }
 
+.ux-image{
+    width: 30rem;
+}
+
 .wireframe{
     border: 1px solid black;
     padding: 20px;
@@ -28,11 +32,33 @@
     text-align: center;
 }
 
+.wire-image{
+    width: 20rem;
+}
+
+
+
 .style-guide{
     border: 1px solid black;
     padding: 20px;
     margin-bottom: 6%;
     text-align: center;
+}
+
+.palette-one{
+    width: 16rem;
+}
+
+.colour-one{
+    width: 30rem;
+}
+
+.palette-image{
+    width:18rem;
+}
+
+.colour-image{
+    width:25rem;
 }
 
 .elements{
@@ -47,4 +73,15 @@
     padding: 20px;
     margin-bottom: 6%;
     text-align: center;
+}
+
+@media (max-width: 1050px){
+    .design-content{
+        font-size: 20px;
+        margin-top: 10%;
+        margin-left: 0%;
+        padding: 6%;
+        width: auto;
+        
+    }
 }
