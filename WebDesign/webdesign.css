@@ -73,11 +73,14 @@
 .reference-image{
     width: 30rem;
 }
+
+.inbetween-text{
+    text-align: left;
+}
 .elements{
     border: 1px solid black;
     padding: 20px;
     margin-bottom: 6%;
-    text-align: center;
 }
 
 .references{
