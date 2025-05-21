@@ -215,6 +215,15 @@ a.active{
         right: 0;
     }
 
+    #progress{
+        cursor: none;
+        
+    }
+
+    #progress-value{
+        height: calc(100% - 0px);
+        width: calc(100% - 0px);
+    }
     
 
     .home-container{
