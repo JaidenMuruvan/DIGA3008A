@@ -1,32 +1,56 @@
+//Back-to-top
 let calcScrollValue = () => {
-    //Getting element ny its ID
     let scrollProgress = document.getElementById("progress");
     let progressValue = document.getElementById("progress-value");
-    let pos = document.documentElement.scrollTop;
-    let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    let scrollValue = Math.round((pos * 100) / calcHeight);
-    if(pos>100){
+
+    // Get current scroll position
+    let pos = document.documentElement.scrollTop || document.body.scrollTop;
+
+    // Total scrollable height
+    let scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
+    let clientHeight = document.documentElement.clientHeight || window.innerHeight;
+
+    // Calculate percentage scrolled, with safeguard against division by zero
+    let calcHeight = scrollHeight - clientHeight;
+    let scrollValue = calcHeight > 0 ? Math.round((pos * 100) / calcHeight) : 0;
+
+    // Show or hide the progress button
+    if (pos > 100) {
         scrollProgress.style.display = "grid";
-    } else{
+    } else {
         scrollProgress.style.display = "none";
     }
+
+    // Scroll to top when clicked
     scrollProgress.addEventListener("click", () => {
         document.documentElement.scrollTop = 0;
-    })
-    scrollProgress.style.background = `conic-gradient(#48cfcb ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
-}
+        document.body.scrollTop = 0;
+    });
 
+    // Set conic gradient background fill
+    scrollProgress.style.background = `conic-gradient(#48cfcb ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
+};
+
+// Run the function on scroll and page load
 window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
 
+//Dark Mode
 const icon = document.getElementById("icon-desktop");
 const iconMobile = document.getElementById("icon-mobile");
 
-// Absolute paths from the root
-const moonIconPath = "/Images/moon.png";
-const sunIconPath = "/Images/sun.png";
+//Check if current page is the home page (root)
+const isHomePage =
+    window.location.pathname === "/" ||
+    window.location.pathname.endsWith("/index.html") ||
+    window.location.pathname.split("/").filter(Boolean).length === 1;
 
-// Apply theme and icon on page load
+const imageBasePath = isHomePage ? "Images/" : "../Images/";
+
+const moonIconPath = imageBasePath + "moon.png";
+const sunIconPath = imageBasePath + "sun.png";
+
+//Apply the theme and icon on page when it loads
 const theme = localStorage.getItem("theme");
 
 if (theme === "dark") {
@@ -39,10 +63,9 @@ if (theme === "dark") {
     if (iconMobile) iconMobile.src = moonIconPath;
 }
 
-// Function to toggle theme and icons
+//Toggle the theme function
 function toggleTheme() {
     const isDark = document.body.classList.toggle("dark-theme");
-
     const newIconSrc = isDark ? sunIconPath : moonIconPath;
 
     if (icon) icon.src = newIconSrc;
@@ -51,8 +74,9 @@ function toggleTheme() {
     localStorage.setItem("theme", isDark ? "dark" : "light");
 }
 
-// Add click events
+//Add event listeners
 if (icon) icon.onclick = toggleTheme;
 if (iconMobile) iconMobile.onclick = toggleTheme;
+
 //DOM Object
 // window.alert("Hello there, welcome!");
