@@ -1,36 +1,40 @@
 //Back-to-top
-let scrollProgress = document.getElementById("progress");
-let progressValue = document.getElementById("progress-value");
+const scrollProgress = document.getElementById("progress");
+const progressValue = document.getElementById("progress-value");
 
-let calcScrollValue = () => {
-    let pos = window.scrollY; // more consistent across devices
-    let winHeight = window.innerHeight;
-    let docHeight = document.documentElement.scrollHeight;
+function calcScrollValue() {
+    const pos = window.scrollY;
+    const doc = document.documentElement;
 
-    // Total scrollable height
-    let scrollable = docHeight - winHeight;
+    // Instead of window.innerHeight (which changes on mobile), use doc.clientHeight
+    const winHeight = doc.clientHeight;
+    const scrollHeight = doc.scrollHeight;
 
-    // Avoid divide-by-zero errors
-    let scrollValue = scrollable > 0 ? Math.round((pos / scrollable) * 100) : 0;
+    const totalScrollable = scrollHeight - winHeight;
 
-    // Show or hide scroll-to-top button
-    if (pos > 100) {
-        scrollProgress.style.display = "grid";
-    } else {
-        scrollProgress.style.display = "none";
-    }
+    // Avoid divide-by-zero
+    let scrollPercent = totalScrollable > 0
+        ? Math.round((pos / totalScrollable) * 100)
+        : 0;
 
-    // Fill the circle
-    scrollProgress.style.background = `conic-gradient(#48cfcb ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
-};
+    // Clamp value just in case (prevents it from going over 100)
+    scrollPercent = Math.min(scrollPercent, 100);
 
-// Smooth scroll to top on click
+    // Show/hide button
+    scrollProgress.style.display = pos > 100 ? "grid" : "none";
+
+    // Fill the circular progress
+    scrollProgress.style.background = `conic-gradient(#48cfcb ${scrollPercent}%, #d7d7d7 ${scrollPercent}%)`;
+}
+
+// Scroll to top when clicked
 scrollProgress.addEventListener("click", () => {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
+    window.scrollTo({ top: 0, behavior: "smooth" });
 });
+
+// Attach event listeners
+window.addEventListener("scroll", calcScrollValue);
+window.addEventListener("load", calcScrollValue);
 
 // Run on scroll and load
 window.addEventListener("scroll", calcScrollValue);
