@@ -6,37 +6,36 @@ function calcScrollValue() {
     const pos = window.scrollY;
     const doc = document.documentElement;
 
-    // Instead of window.innerHeight (which changes on mobile), use doc.clientHeight
+    //Instead of using window.innerHeight I am using doc.clientHeight to try and make it consistent on other devices
     const winHeight = doc.clientHeight;
     const scrollHeight = doc.scrollHeight;
 
     const totalScrollable = scrollHeight - winHeight;
 
-    // Avoid divide-by-zero
     let scrollPercent = totalScrollable > 0
         ? Math.round((pos / totalScrollable) * 100)
         : 0;
 
-    // Clamp value just in case (prevents it from going over 100)
+    //Clamps value just in case, prevents it from going over 100
     scrollPercent = Math.min(scrollPercent, 100);
 
-    // Show/hide button
+    //Show/hide button
     scrollProgress.style.display = pos > 100 ? "grid" : "none";
 
-    // Fill the circular progress
+    //Fill the circular progress, first color is the filling and second color is what is remaining
     scrollProgress.style.background = `conic-gradient(#48cfcb ${scrollPercent}%, #d7d7d7 ${scrollPercent}%)`;
 }
 
-// Scroll to top when clicked
+//Scroll to top when clicked
 scrollProgress.addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
-// Attach event listeners
+//Attached event listeners
 window.addEventListener("scroll", calcScrollValue);
 window.addEventListener("load", calcScrollValue);
 
-// Run on scroll and load
+//Ran on scroll and load
 window.addEventListener("scroll", calcScrollValue);
 window.addEventListener("load", calcScrollValue);
 

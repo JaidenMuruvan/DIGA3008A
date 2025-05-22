@@ -262,13 +262,17 @@ a.active{
         height: 60px;
         width: 60px;
         z-index: 999;
+        
     }
 
     #progress-value {
         height: calc(100% - 12px);
         width: calc(100% - 12px);
         font-size: 28px;
+        cursor: none;
+        
     }
+
     
 
     .home-container{
