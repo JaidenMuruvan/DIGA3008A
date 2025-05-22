@@ -3,18 +3,18 @@
     width: 50%;
     text-align: left;
     margin-left: 375px;
-    
+    color: var(--text-color);
     
 }
 
 .goals{
-    border: 1px solid black;
+    border: 1px solid var(--text-color);
     padding: 20px;
     margin-bottom: 6%;
 }
 
 .ux{
-    border: 1px solid black;
+    border: 1px solid var(--text-color);
     padding: 20px;
     margin-bottom: 6%;
     text-align: center;
@@ -27,7 +27,7 @@
 }
 
 .wireframe{
-    border: 1px solid black;
+    border: 1px solid var(--text-color);
     padding: 20px;
     margin-bottom: 6%;
     text-align: center;
@@ -40,7 +40,7 @@
 
 
 .style-guide{
-    border: 1px solid black;
+    border: 1px solid var(--text-color);
     padding: 20px;
     margin-bottom: 6%;
     text-align: center;
@@ -78,13 +78,13 @@
     text-align: left;
 }
 .elements{
-    border: 1px solid black;
+    border: 1px solid var(--text-color);
     padding: 20px;
     margin-bottom: 6%;
 }
 
 .references{
-    border: 1px solid black;
+    border: 1px solid var(--text-color);
     padding: 20px;
     margin-bottom: 6%;
     text-align: center;

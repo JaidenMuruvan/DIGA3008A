@@ -15,14 +15,12 @@ h2{
 .whole-port{
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
+    border: 1px solid var(--text-color);
 }
 .port-container{
     display: flex;
-    
     justify-content: center;
     align-items: center;
-    
     margin: 40px 20px;
     border-radius: 20px;
 }

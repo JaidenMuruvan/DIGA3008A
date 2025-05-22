@@ -19,5 +19,35 @@ let calcScrollValue = () => {
 window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
 
+const icon = document.getElementById("icon-desktop");
+
+// Apply the theme on page load
+if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark-theme");
+}
+
+// Toggle theme on click
+icon.onclick = function () {
+    document.body.classList.toggle("dark-theme");
+
+    // Save the preference
+    if (document.body.classList.contains("dark-theme")) {
+        localStorage.setItem("theme", "dark");
+    } else {
+        localStorage.setItem("theme", "light");
+    }
+};
+
+const iconMobile = document.getElementById("icon-mobile");
+
+iconMobile.onclick = function () {
+    document.body.classList.toggle("dark-theme");
+
+    if (document.body.classList.contains("dark-theme")) {
+        localStorage.setItem("theme", "dark");
+    } else {
+        localStorage.setItem("theme", "light");
+    }
+};
 //DOM Object
 // window.alert("Hello there, welcome!");
