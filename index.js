@@ -1,39 +1,40 @@
 //Back-to-top
-let calcScrollValue = () => {
-    let scrollProgress = document.getElementById("progress");
-    let progressValue = document.getElementById("progress-value");
+let scrollProgress = document.getElementById("progress");
+let progressValue = document.getElementById("progress-value");
 
-    // Get current scroll position
-    let pos = document.documentElement.scrollTop || document.body.scrollTop;
+let calcScrollValue = () => {
+    let pos = window.scrollY; // more consistent across devices
+    let winHeight = window.innerHeight;
+    let docHeight = document.documentElement.scrollHeight;
 
     // Total scrollable height
-    let scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
-    let clientHeight = document.documentElement.clientHeight || window.innerHeight;
+    let scrollable = docHeight - winHeight;
 
-    // Calculate percentage scrolled, with safeguard against division by zero
-    let calcHeight = scrollHeight - clientHeight;
-    let scrollValue = calcHeight > 0 ? Math.round((pos * 100) / calcHeight) : 0;
+    // Avoid divide-by-zero errors
+    let scrollValue = scrollable > 0 ? Math.round((pos / scrollable) * 100) : 0;
 
-    // Show or hide the progress button
+    // Show or hide scroll-to-top button
     if (pos > 100) {
         scrollProgress.style.display = "grid";
     } else {
         scrollProgress.style.display = "none";
     }
 
-    // Scroll to top when clicked
-    scrollProgress.addEventListener("click", () => {
-        document.documentElement.scrollTop = 0;
-        document.body.scrollTop = 0;
-    });
-
-    // Set conic gradient background fill
+    // Fill the circle
     scrollProgress.style.background = `conic-gradient(#48cfcb ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
 };
 
-// Run the function on scroll and page load
-window.onscroll = calcScrollValue;
-window.onload = calcScrollValue;
+// Smooth scroll to top on click
+scrollProgress.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+
+// Run on scroll and load
+window.addEventListener("scroll", calcScrollValue);
+window.addEventListener("load", calcScrollValue);
 
 //Dark Mode
 const icon = document.getElementById("icon-desktop");
