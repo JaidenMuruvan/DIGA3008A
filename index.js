@@ -20,34 +20,39 @@ window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
 
 const icon = document.getElementById("icon-desktop");
-
-// Apply the theme on page load
-if (localStorage.getItem("theme") === "dark") {
-    document.body.classList.add("dark-theme");
-}
-
-// Toggle theme on click
-icon.onclick = function () {
-    document.body.classList.toggle("dark-theme");
-
-    // Save the preference
-    if (document.body.classList.contains("dark-theme")) {
-        localStorage.setItem("theme", "dark");
-    } else {
-        localStorage.setItem("theme", "light");
-    }
-};
-
 const iconMobile = document.getElementById("icon-mobile");
 
-iconMobile.onclick = function () {
-    document.body.classList.toggle("dark-theme");
+// Absolute paths from the root
+const moonIconPath = "/Images/moon.png";
+const sunIconPath = "/Images/sun.png";
 
-    if (document.body.classList.contains("dark-theme")) {
-        localStorage.setItem("theme", "dark");
-    } else {
-        localStorage.setItem("theme", "light");
-    }
-};
+// Apply theme and icon on page load
+const theme = localStorage.getItem("theme");
+
+if (theme === "dark") {
+    document.body.classList.add("dark-theme");
+    if (icon) icon.src = sunIconPath;
+    if (iconMobile) iconMobile.src = sunIconPath;
+} else {
+    document.body.classList.remove("dark-theme");
+    if (icon) icon.src = moonIconPath;
+    if (iconMobile) iconMobile.src = moonIconPath;
+}
+
+// Function to toggle theme and icons
+function toggleTheme() {
+    const isDark = document.body.classList.toggle("dark-theme");
+
+    const newIconSrc = isDark ? sunIconPath : moonIconPath;
+
+    if (icon) icon.src = newIconSrc;
+    if (iconMobile) iconMobile.src = newIconSrc;
+
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+}
+
+// Add click events
+if (icon) icon.onclick = toggleTheme;
+if (iconMobile) iconMobile.onclick = toggleTheme;
 //DOM Object
 // window.alert("Hello there, welcome!");
