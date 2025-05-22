@@ -1,4 +1,5 @@
 let calcScrollValue = () => {
+    //Getting element ny its ID
     let scrollProgress = document.getElementById("progress");
     let progressValue = document.getElementById("progress-value");
     let pos = document.documentElement.scrollTop;

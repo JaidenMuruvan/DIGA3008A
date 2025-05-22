@@ -258,8 +258,8 @@ a.active{
     text-align: center;
     flex-direction: column;
     padding: 20px;
-    border-radius: 10px;
-    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     background-color: white;
     margin-left: 1%;
     margin-bottom: 20px;
@@ -267,8 +267,9 @@ a.active{
 }
 
 .home-card:hover{
+    cursor: pointer;
     transform: translateY(-8px);
-    box-shadow: 0 0 15px #b1b1b16b;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     background-color: #b1b1b100;
 }
 
