@@ -221,8 +221,8 @@ a.active{
     #icon-mobile {
         display: block;
         position: relative;
-        margin: 20px auto;
-        width: 70px;
+        margin: -60px 0px;
+        width: 60px;
     }
     
     nav ul{
