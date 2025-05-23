@@ -7,6 +7,16 @@
     
 }
 
+.SideBar ul{
+    list-style-type: none;
+    font-size: 1.5rem;
+    
+}
+
+.SideBar ul li a{
+    text-decoration: none;
+}
+
 .goals{
     border: 1px solid var(--text-color);
     padding: 20px;
