@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Jaiden Muruvan's portfolio website, showing web design and game development."
+    />
+    <meta name="author" content="Jaiden Muruvan" />
+    <meta
+      name="keywords"
+      content="Web design, game development, interactive media, portfoilio, Jaiden Muruvan, html, css, JavaScript."
+    />
+    <title>Blog Week 13</title>
+    <link rel="stylesheet" href="../normalize.css" />
+    <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="blogpage.css" />
+    <script
+      src="https://kit.fontawesome.com/5b1876fb7a.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="logo" class="logo"> Jaiden Muruvan </label>
+        <label for="check" class="burger-button"
+          ><i class="fa-solid fa-bars"></i
+        ></label>
+        <img
+          src="../Images/WebsiteLogo.png"
+          alt="Logo of the Website"
+          id="logo"
+        />
+        <ul>
+          <li><a href="../index.html"> Home </a></li>
+          <li><a href="../Blogs/blogpage.html"> Blogs </a></li>
+          <li><a href="../Portfolio/portfoliopage.html"> Portfolio </a></li>
+          <li><a href="../Essays/essaypage.html"> Essays </a></li>
+          <li><a href="../WebDesign/designpage.html"> Web Design </a></li>
+          <li><a href="../About/aboutpage.html"> About </a></li>
+          <li>
+            <img
+              src="Images/moon.png"
+              id="icon-mobile"
+              alt="Toggle Dark Mode"
+            />
+          </li>
+        </ul>
+        <!-- This stays visible on desktop -->
+        <img src="../Images/moon.png" id="icon-desktop" alt="Toggle Dark Mode" />
+      </nav>
+    </header>
+    <main>
+    <h2>Week 13 - Blog Post</h2>
+    <article class="blog-content">
+        <h3>
+            How our code matters as developers in the context of decolonialism, and 
+            identifying things in our own coding practice that we must be aware of.
+        </h3>
+
+        <p>
+           An ethical internet should be one that consists of inclusivity, transparency, privacy and 
+           sustainability, prioritizing human dignity and digital self-determination. Central to this vision 
+           is the commitment to universal access, where web technologies are designed to be inclusive across 
+           diverse socioeconomic and ability spectrums (W3C, 2021). Users should be informed about how their 
+           data is used, how algorithms function and who is responsible for content moderation. It keeps privacy 
+           through frameworks like “Privacy by Design” which advocates proactive, user-centric data governance (Cavoukian, 2021). 
+           This involves collecting only necessary data and properly communicating about that data usage and giving the user 
+           control over their personal information. Transparency and accountability in algorithmic systems and data 
+           practices are essential to foster user trust and digital literacy and ethical internet should always 
+           support healthy online communities. This can be achieved through mitigating harmful behaviours and 
+           misinformation while preserving freedom of expression (W3C, 2021). The internet should support constructive 
+           dialogue and community building but also have measures to prevent harmful acts such as harassment or 
+           any online abuse. An ethical design of a website means to create user interfaces that are intuitive 
+           and one that respects user autonomy. This involves eliminating manipulative interface patterns and 
+           ensuring informed user content (Gray et al., 2018). Users should be able to have agency over their 
+           digital experience which involves a participatory design of the digital environment where communities 
+           can actively engage in creating digital solutions that reflect their values and needs.  Environmental 
+           sustainability is increasingly recognised, calling for digital systems that minimise energy use and 
+           electronic waste (W3C, 2021). The environmental impact of digital technologies cannot be overlooked. 
+           It is essential that in web development, developers consider energy consumption, electronic waste and 
+           how to promote sustainable practices. An ethical internet aligns with the principles of equity, agency 
+           and ecological responsibility, requiring ongoing collaborative stewardship by technologists, policymakers 
+           and users. It also requires continuous effort and vigilance to ensure that digital spaces remain inclusive, 
+           respectful and empowering for all users.
+        </p>
+
+        <h3>References</h3>
+
+    <ul>
+        <li>
+            Cavoukian, A., 2011. “Privacy by design: The 7 foundational principles.” [online] 
+            Information and Privacy Commissioner of Ontario. 
+            Available at: <a href="https://privacy.ucsc.edu/resources/privacy-by-design---foundational-principles.pdf" target="_blank">
+            https://privacy.ucsc.edu/resources/privacy-by-design---foundational-principles.pdf </a> [Accessed 18 May 2025].
+        </li>
+        <li>
+            Gray, C.M., Kou, Y., Battles, B., Hoggatt, J. and Toombs, A.L., 2018. “The dark (patterns) side of UX design. 
+            In: Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems.” ACM.
+        </li>
+        <li>
+            W3C, 2021. “Ethical Web Principles.” [online] World Wide Web Consortium. 
+            Available at: <a href="https://www.w3.org/TR/ethical-web-principles/" 
+            target="_blank">https://www.w3.org/TR/ethical-web-principles/</a> [Accessed 18 May 2025].
+        </li>
+    </ul>
+        <div id="progress">
+      <span id="progress-value">▲</span>
+    </div>
+    </main>
+    <script src="../index.js"></script>
+    <footer class="footer-content">
+      <p>© 2025 Jaiden Muruvan | All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
