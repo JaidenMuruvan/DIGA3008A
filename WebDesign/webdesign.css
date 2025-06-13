@@ -39,6 +39,10 @@
     padding: 20px;   
 }
 
+.toc-container a:hover{
+    text-decoration: underline;
+    color: #229799;
+}
 /* .toc-container a.active{
     background-color: #48C8CB;
     color: #ffffff;
@@ -130,6 +134,14 @@
 }
 
 @media (max-width: 1050px){
+    .toc-container{
+        position: static;
+        width: 90%;
+        height: auto;
+        text-align: center;
+        margin-left: 2.5%;
+    }
+    
     .top-headings{
         font-size: 3.2rem;
     }
