@@ -188,6 +188,17 @@ a.active{
     display: none;
 }
 
+.page-description{
+    font-family: "Kanit";
+    display: flex;
+    margin: 40px 100px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    padding: 20px;
+
+}
+
 @media (max-width: 1050px){
     .burger-button{
         display: block;
@@ -254,7 +265,13 @@ a.active{
         right: 0;
     }
 
+    .page-description{
+   
+    margin: 40px 40px;
     
+
+}
+
     #progress {
         display: grid;
         bottom: 20px;
