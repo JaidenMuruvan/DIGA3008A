@@ -38,6 +38,7 @@ function makeImages(movies){
         const img = document.createElement('img');
         img.src = src;
         img.alt = movie.show.name;
+        img.classList.add('movie-poster');//Class added for styling
 
         //Appended image to link, then linked to container
         link.appendChild(img);
