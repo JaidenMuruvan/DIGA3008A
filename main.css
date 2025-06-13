@@ -302,7 +302,7 @@ a.active{
 
 .home-card{
     display: flex;
-    height: 330px;
+    height: 380px;
     width: 250px;
     text-align: center;
     color: var(--text-color);
@@ -324,12 +324,24 @@ a.active{
 }
 
 .readmore{
-    font-family: "Kanit", sans-serif;
+    /* font-family: "Kanit", sans-serif;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    padding: 5px 20px;
+    padding: 5px 20px; */
+    font-family: "Kanit", sans-serif;
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 19%;
+    margin-top: auto;
+    width: 50%;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: var(--text-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+    border-radius: 5px;
     
 }
 

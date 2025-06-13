@@ -53,9 +53,9 @@ h2{
     display: inline-block;
     font-size: 20px;
     margin-left: 19%;
+    margin-top: auto;
     width: 50%;
     text-align: center;
-    
     padding: 10px 20px;
     background-color: var(--text-color);
     color: var(--secondary-color);
