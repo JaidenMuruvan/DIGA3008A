@@ -68,6 +68,13 @@ h2{
     text-decoration: underline;
 }
 
+.evidence{
+    
+    width:35rem;
+    display: block;
+    margin: auto;
+}
+
 @media (max-width: 1100px ){
 
     .essay-container{
@@ -88,5 +95,8 @@ h2{
         
     }
 
+    .evidence{
+        width: 90%;
+    }
 
 }
