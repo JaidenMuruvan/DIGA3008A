@@ -35,42 +35,131 @@
     />
   </head>
   <body>
-    <nav>
-      <input type="checkbox" id="check" />
-      <label for="logo" class="logo"> Jaiden Muruvan </label>
-      <label for="check" class="burger-button"
-        ><i class="fa-solid fa-bars"></i
-      ></label>
-      <img
-        src="../Images/WebsiteLogo.png"
-        alt="Logo of the Website"
-        id="logo"
-      />
-      <ul>
-        <li><a href="../index.html"> Home </a></li>
-        <li><a href="../Blogs/blogpage.html"> Blogs </a></li>
-        <li>
-          <a href="../Portfolio/portfoliopage.html" class="active">
-            Portfolio
-          </a>
-        </li>
-        <li><a href="../Essays/essaypage.html"> Essays </a></li>
-        <li><a href="../WebDesign/designpage.html"> Web Design </a></li>
-        <li><a href="../About/aboutpage.html"> About </a></li>
-        <li>
-          <img src="Images/moon.png" id="icon-mobile" alt="Toggle Dark Mode" />
-        </li>
-      </ul>
-      <!-- This stays visible on desktop -->
-      <img src="../Images/moon.png" id="icon-desktop" alt="Toggle Dark Mode" />
-    </nav>
-
+    <header>
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="logo" class="logo"> Jaiden Muruvan </label>
+        <label for="check" class="burger-button"
+          ><i class="fa-solid fa-bars"></i
+        ></label>
+        <img
+          src="../Images/WebsiteLogo.png"
+          alt="Logo of the Website"
+          id="logo"
+        />
+        <ul>
+          <li><a href="../index.html"> Home </a></li>
+          <li><a href="../Blogs/blogpage.html"> Blogs </a></li>
+          <li>
+            <a href="../Portfolio/portfoliopage.html" class="active">
+              Portfolio
+            </a>
+          </li>
+          <li><a href="../Essays/essaypage.html"> Essays </a></li>
+          <li><a href="../WebDesign/designpage.html"> Web Design </a></li>
+          <li><a href="../About/aboutpage.html"> About </a></li>
+          <li>
+            <img
+              src="Images/moon.png"
+              id="icon-mobile"
+              alt="Toggle Dark Mode"
+            />
+          </li>
+        </ul>
+        <!-- This stays visible on desktop -->
+        <img
+          src="../Images/moon.png"
+          id="icon-desktop"
+          alt="Toggle Dark Mode"
+        />
+      </nav>
+    </header>
     <section>
       <h1 class="top-headings">Portfolio</h1>
     </section>
+
+    <h2>Games</h2>
+    <div class="port-container" id="car-run">
+      <img
+        src="Images/CarRun.png"
+        alt="Car Run Prototype Cover Art"
+        class="cover-art"
+      />
+      <a href="https://jaiden-muruvan.itch.io/car-run-prototype" target="_blank"
+        ><h3>Car Run Prototype</h3></a
+      >
+      <div class="game-description">
+        <p>
+          This is a prototype car obstacle course. A mix between precision
+          driving, time navigation and dodging obstacles. At its core the player
+          must navigate through a track filled with moving and static obstacles
+          which requires the player to be vigilant with their awareness, timing
+          and reflex control.
+        </p>
+      </div>
+    </div>
+    <div class="port-container" id="car-run">
+      <img
+        src="Images/BrokenBonds.png"
+        alt="Broken Bonds Cover Art"
+        class="cover-art"
+      />
+      <a href="https://padifalass.itch.io/broken-bonds" target="_blank"
+        ><h3>Broken Bonds</h3></a
+      >
+      <div class="game-description">
+        <p>
+          You're just a stuffed toy—but to someone, you once meant everything.
+          Now, torn and losing stuffing, you awaken in a familiar room filled
+          with echoes of childhood, rivalry, and memories. You play as a teddy
+          bear caught in the middle of two brothers’ feud. Your mission? Reunite
+          with your original owner, Brother 1, and prove you still belong by
+          collecting lost pieces of yourself along the way.
+        </p>
+      </div>
+    </div>
+    <div class="port-container" id="car-run">
+      <img
+        src="Images/AirHockey.png"
+        alt="Air Hockey Cover Art"
+        class="cover-art"
+      />
+      <a
+        href="https://jaiden-muruvan.itch.io/inventory-system-assignment-2-resubmission"
+        target="_blank"
+        ><h3>Air Hockey</h3></a
+      >
+      <div class="game-description">
+        <p>
+          This game was made for an assignment in 2nd Year. It is a 1 player
+          sports game where the player must play against AI. First to 5 goals
+          win.
+        </p>
+      </div>
+    </div>
+    <div class="port-container" id="car-run">
+      <img
+        src="Images/Shop.png"
+        alt="Inventory Shop Cover Art"
+        class="cover-art"
+      />
+      <a
+        href="https://jaiden-muruvan.itch.io/inventoryassignment2"
+        target="_blank"
+        ><h3>Inventory Shop System</h3></a
+      >
+      <div class="game-description">
+        <p>
+          This game was made for an assignment in 2nd Year. It is a simple
+          system where a player can buy and sell items with in game currency. A
+          player is also able to store their items in a chest.
+        </p>
+      </div>
+    </div>
+
     <h2>In Game Assets</h2>
-    <div class="whole-port">
-      <div class="port-container">
+    <div class="port-container">
+      <div class="asset-container">
         <figure class="game-asset">
           <img
             src="Images/Scale.png"
@@ -93,7 +182,7 @@
           />
         </figure>
       </div>
-      <div class="port-container">
+      <div class="asset-container">
         <figure class="game-asset">
           <img
             src="Images/Stuffing.png"
