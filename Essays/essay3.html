@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Jaiden Muruvan's portfolio website, showing web design and game development."
+    />
+    <meta name="author" content="Jaiden Muruvan" />
+    <meta
+      name="keywords"
+      content="Web design, game development, interactive media, portfoilio, Jaiden Muruvan, html, css, JavaScript."
+    />
+    <title>Essay 3</title>
+    <link rel="stylesheet" href="../normalize.css" />
+    <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="essaypage.css" />
+    <script
+      src="https://kit.fontawesome.com/5b1876fb7a.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="logo" class="logo"> Jaiden Muruvan </label>
+        <label for="check" class="burger-button"
+          ><i class="fa-solid fa-bars"></i
+        ></label>
+        <img
+          src="../Images/WebsiteLogo.png"
+          alt="Logo of the Website"
+          id="logo"
+        />
+        <ul>
+          <li><a href="../index.html"> Home </a></li>
+
+          <li><a href="../Blogs/blogpage.html"> Blogs </a></li>
+
+          <li><a href="../Portfolio/portfoliopage.html"> Portfolio </a></li>
+
+          <li><a href="../Essays/essaypage.html"> Essays </a></li>
+
+          <li><a href="../WebDesign/designpage.html"> Web Design </a></li>
+
+          <li><a href="../About/aboutpage.html"> About </a></li>
+          <li>
+            <img
+              src="Images/moon.png"
+              id="icon-mobile"
+              alt="Toggle Dark Mode"
+            />
+          </li>
+        </ul>
+        <!-- This stays visible on desktop -->
+        <img
+          src="../Images/moon.png"
+          id="icon-desktop"
+          alt="Toggle Dark Mode"
+        />
+      </nav>
+    </header>
+    <main>
+      <h2>Essay 3: The Final Reflection</h2>
+      <article class="essay-content">
+        <h3>My Final Reflection on the Implementation of My Website</h3>
+        <p>
+          Developing my website has definitely been an interesting and iterative
+          journey that revealed the relationship between structure, design, and
+          functionality. What started as a basic site with scattered files and
+          inconsistent styling evolved into a well-organised, maintainable, and
+          user-focused project. Through ongoing feedback and testing, I tried to
+          refine every component, from the folder structure and semantic HTML to
+          responsive layouts and interactive JavaScript features. This
+          reflection outlines the technical decisions behind the site’s
+          development, explaining how design choices influenced the code and how
+          each element such as the structure, semantics, metadata, CSS,
+          JavaScript, and UI/UX all contributed to the final product.
+        </p>
+
+        <h3>Folder Structure</h3>
+        <p>
+          Folder Structure Initially, my project suffered from a cluttered file
+          structure, with each HTML page linked to its own CSS file. This setup
+          made the site difficult to maintain and scale. After receiving
+          feedback, I reorganised the site’s architecture to better reflect its
+          content and functionality. I introduced a clear hierarchy, with
+          dedicated folders for Blogs, Design, Essays, Portfolio, and
+          HomeImages. This restructuring enhanced both developer workflow and
+          user navigation. To then further streamline the site, I consolidated
+          redundant stylesheets into a single blog.css file, since all the Blog
+          Weeks sections share similar layouts. This eliminated repetition and
+          simplified updates. I also standardised file and class names using
+          camelCase conventions for greater consistency across the project.
+        </p>
+
+        <h3>Semantic Markup</h3>
+        <p>
+          My website uses semantic HTML elements such as header, main, footer,
+          article, and section to give the content meaningful structure. Each
+          blog and essay are wrapped in an article to indicate standalone
+          content, while related content is grouped within section tags. I
+          maintained a logical heading hierarchy throughout to improve
+          readability for assistive technologies and support better indexing by
+          search engines.
+        </p>
+
+        <h3>CSS</h3>
+        <p>
+          When styling the website, I focused on writing clean, modular, and
+          scalable CSS. I avoided inline styles, relying instead on external
+          stylesheets to centralise and manage all visual rules. Ensuring that
+          there are reusable classes across all pages. To keep things organised,
+          I divided the CSS into separate files by functionality for example,
+          portfolio.css handles styles specific to the Portfolio page, which
+          differs from other sections. I also tried to implement responsive
+          design using media queries to adapt the layout for different screen
+          sizes.
+        </p>
+        <h3>JavaScript</h3>
+        <p>
+          JavaScript plays a key role in improving interactivity and enhancing
+          user experience. I implemented features such as a back-to-top button,
+          smooth scrolling to sections, as well as a dark mode which all uses
+          event listeners and DOM manipulation. Subtle animations between blog
+          posts added a polished feel. My favourite implementation in JS is the
+          API allowing users to search and watch their favourite shows. If
+          expanded, I’d explore using asynchronous data fetching to reduce page
+          reloads and improve performance.
+        </p>
+        <h3>UI/UX and Code Interplay</h3>
+        <p>
+          Throughout development, I realised how deeply user interface and
+          experience choices influence the underlying code. Visual features like
+          theme switching, hover effects, and responsive layouts required
+          careful coordination between CSS and JavaScript. This experience
+          taught me that balancing visual polish with maintainable code is
+          crucial. In future iterations, I would refactor repetitive styles,
+          document design patterns more thoroughly, and prioritise accessibility
+          testing to ensure the code grows alongside the UI.
+        </p>
+
+        <p>
+          In conclusion, this website underscored the importance of structure,
+          clarity, and user experience in web development. By refining the
+          folder organisation, applying semantic HTML, and optimising CSS and
+          JavaScript, I enhanced both the usability and maintainability of the
+          website. Features like responsive design, theme switching, and
+          microformats boosted accessibility and SEO. While the site functions
+          well, it also highlighted areas for improvement, such as code
+          scalability and reuse. Overall, the process deepened my technical
+          understanding and reinforced the value of writing clean, efficient,
+          and thoughtful code.
+        </p>
+
+        <p>
+          Overall, in analysing the UI and UX of the Makro website through the
+          lens of ethical design, accessibility, navigation structure and
+          user-centred principles it becomes clear that while the site meets
+          functional standards, there is definitely areas for improvement. It
+          would significantly benefit the website if these ethical gaps were
+          addressed to enhance navigation, responsiveness, trust within the
+          user, accessibility and user prioritization. Makro’s website has a
+          strong foundation and must commit to a more ethical, inclusive and
+          human-centred design approach to ensure that all users, regardless of
+          ability, background or intent, can navigate and interact with its
+          platform easily and effectively.
+        </p>
+      </article>
+      <div class="essay-navigation">
+        <a href="essay2.html">Previous Essay</a>
+        <a href="essaypage.html">Main Essay Page</a>
+      </div>
+      <div id="progress">
+        <span id="progress-value">▲</span>
+      </div>
+    </main>
+    <script src="../index.js"></script>
+    <footer class="footer-content">
+      <p>© 2025 Jaiden Muruvan | All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
